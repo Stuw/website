@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Introduction
 
+TrueCharts is a catalog of highly optimised TrueNAS SCALE Charts. Made for the community, By the community!
+
 This manual contains general information on working with TrueCharts Charts.
 
 :::tip
@@ -11,3 +13,25 @@ This manual contains general information on working with TrueCharts Charts.
 Please, always remember to check the content specific to the chart.
 
 :::
+
+# Concept
+
+## Integration between applications
+
+Original TrueNAS Charts are standalone applications that can be used independently.
+
+In contrast Truecharts applications are designed to use "core" applications for simplicity and unification:
+- Traefik is an Ingress / Reverse-Proxy
+- CloudNativePG (or CNPG for short) is a recommended database
+
+There are also few applications that are recommended for certificate management, authentication, DNS, etc.
+
+## Application storage
+
+Truecharts applications are designed to store all information within containers. It's not recommended to use Host Path to store data.
+
+If application uses database, then it usually starts CloudeNative PG in the application deployment. Database data is also stored within container.
+
+# First installation
+
+Please check [Getting Started with TrueCharts inside TrueNAS SCALE](https://truecharts.org/manual/SCALE/guides/getting-started) for more information.
