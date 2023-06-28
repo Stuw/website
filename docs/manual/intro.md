@@ -32,6 +32,10 @@ Truecharts applications are designed to store all information within containers.
 
 If application uses database, then it usually starts CloudeNative PG in the application deployment. Database data is also stored within container.
 
+## Backup and restore
+
+Heavyscript is a bash script for managing Truenas SCALE applications, automatically update applications, backup applications datasets, open a shell for containers, and many other features.
+
 # First installation
 
 Please check [Getting Started with TrueCharts inside TrueNAS SCALE](https://truecharts.org/manual/SCALE/guides/getting-started) for more information.
